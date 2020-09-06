@@ -1,0 +1,75 @@
+.rules {
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    color: white;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    margin: 0 2rem 1rem auto;
+    border: .1rem solid white;
+    border-radius: .5rem;
+    transition: all .1s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(1.02);
+    }
+
+    &__checkbox {
+        display: none;
+    }
+}
+
+#rules:checked ~ .modal__bg {
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    top: 10rem;
+    left: 35%;
+    width: 30%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: .5rem;
+    
+    &__bg {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(7, 8, 20, 0.6);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &--text {
+            font-size: 180%;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &--close {
+            width: fit-content;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+    }
+}

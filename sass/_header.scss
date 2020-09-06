@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: .2rem solid $header-outline;
+    border-radius: 1rem;
+
+    &__logo {
+        width: 162px;
+        height: 99px;
+    }
+
+    &__score {
+        min-width: 20%;
+        background-color: white;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        text-align: center;
+
+        &--text {
+            color: $score-text;
+            text-transform: uppercase;
+        }
+
+        &--points {
+            font-size: 400%;
+            line-height: 100%;
+            color: $dark-text;
+        }
+    }
+}
