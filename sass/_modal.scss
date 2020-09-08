@@ -18,6 +18,10 @@
         transform: scale(1.02);
     }
 
+    @media only screen and (max-width: 500px) {
+        margin: 4rem auto 2rem auto;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -30,11 +34,32 @@
 .modal {
     position: fixed;
     top: 10rem;
-    left: 35%;
-    width: 30%;
+    left: 30%;
+    right: 30%;
+    min-width: 22rem;
     padding: 2rem;
     background-color: white;
     border-radius: .5rem;
+
+    @media only screen and (max-width: 1000px) {
+        top: 8rem;
+        left: 25%;
+        right: 25%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        left: 15%;
+        right: 15%;
+    }
+
+    @media only screen and (max-width: 500px) {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        border-radius: 0;
+    }
     
     &__bg {
         display: none;
@@ -55,7 +80,12 @@
         &--text {
             font-size: 180%;
             font-weight: 700;
+            color: hsl(237, 49%, 15%);
             text-transform: uppercase;
+
+            @media only screen and (max-width: 500px) {
+                margin: 0 auto 2rem auto;
+            }
         }
 
         &--close {
@@ -63,6 +93,12 @@
 
             &:hover {
                 cursor: pointer;
+            }
+
+            @media only screen and (max-width: 500px) {
+                position: absolute;
+                top: 30rem;
+                left: 48%
             }
         }
     }

@@ -13,56 +13,58 @@
 </head>
 
 <body>
-  <header class="header">
-    <img src="./images/logo.svg" alt="Rock Paper Scissors Logo" class="header__logo">
-    <div class="header__score">
-      <p class="header__score--text">Score</p>
-      <div class="header__score--points">0</div>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="playfield">
-      <div class="playfield__paper" onclick="startRound('paper')">
-        <div class="playfield__paper--bg">
-          <img src="./images/icon-paper.svg" alt="Paper" class="playfield__paper--icon">
+  <div class="content">
+    <header class="header">
+      <img src="./images/logo.svg" alt="Rock Paper Scissors Logo" class="header__logo">
+      <div class="header__score">
+        <p class="header__score--text">Score</p>
+        <div class="header__score--points">0</div>
+      </div>
+    </header>
+  
+    <div class="container">
+      <div class="playfield">
+        <div class="playfield__paper cursor" onclick="startRound('paper')">
+          <div class="playfield__paper--bg">
+            <img src="./images/icon-paper.svg" alt="Paper" class="playfield__paper--icon">
+          </div>
+        </div>
+    
+        <div class="playfield__rock cursor" onclick="startRound('rock')">
+          <div class="playfield__rock--bg">
+            <img src="./images/icon-rock.svg" alt="Rock" class="playfield__rock--icon">
+          </div>
+        </div>
+        
+        <div class="playfield__scissors cursor" onclick="startRound('scissors')">
+          <div class="playfield__scissors--bg">
+            <img src="./images/icon-scissors.svg" alt="Scissors" class="playfield__scissors--icon">
+          </div>
         </div>
       </div>
+    </div>
+    
+    <label for="rules" class="rules" onclick="toggleGame()">Rules</label>
+    <input type="checkbox" id="rules" class="rules__checkbox">
   
-      <div class="playfield__rock" onclick="startRound('rock')">
-        <div class="playfield__rock--bg">
-          <img src="./images/icon-rock.svg" alt="Rock" class="playfield__rock--icon">
+    <div class="modal__bg">
+      <div class="modal">
+        <div class="modal__header">
+          <p class="modal__header--text">Rules</p>
+          <label for="rules">
+            <img src="./images/icon-close.svg" alt="Close" class="modal__header--close">
+          </label>
         </div>
-      </div>
-      
-      <div class="playfield__scissors" onclick="startRound('scissors')">
-        <div class="playfield__scissors--bg">
-          <img src="./images/icon-scissors.svg" alt="Scissors" class="playfield__scissors--icon">
+        <div class="modal__image">
+          <img src="./images/image-rules.svg" alt="Rules" class="modal__img">
         </div>
       </div>
     </div>
-  </div>
-  
-  <label for="rules" class="rules">Rules</label>
-  <input type="checkbox" id="rules" class="rules__checkbox">
-
-  <div class="modal__bg">
-    <div class="modal">
-      <div class="modal__header">
-        <p class="modal__header--text">Rules</p>
-        <label for="rules">
-          <img src="./images/icon-close.svg" alt="Close" class="modal__header--close">
-        </label>
-      </div>
-      <div class="modal__image">
-        <img src="./images/image-rules.svg" alt="Rules" class="modal__img">
-      </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/sirtralala" target="_blank">Thomas Doerflinger</a>.
     </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/sirtralala" target="_blank">Thomas Doerflinger</a>.
   </div>
 
   <script src="./js/script.js"></script>

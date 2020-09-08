@@ -7,6 +7,10 @@
     border: .2rem solid $header-outline;
     border-radius: 1rem;
 
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+    }
+
     &__logo {
         width: 162px;
         height: 99px;
