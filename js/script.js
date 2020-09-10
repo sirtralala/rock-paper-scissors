@@ -127,15 +127,3 @@ playAgain = () => {
     document.querySelector('.playfield').style.display = 'flex';
     document.querySelector('.container').style.background = `url("../images/bg-triangle.svg") center ${window.innerWidth > 400 ? '' : '/contain'} no-repeat`;
 }
-
-
-toggleGame = () => {
-    let game = document.querySelector('.result__game');
-
-    if (game.style.display == 'flex') {
-        game.style.display = 'none';
-    }
-    else {
-        game.style.display = 'flex';
-    }
-}
