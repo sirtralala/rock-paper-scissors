@@ -163,12 +163,12 @@ body {
 
 .playfield__paper::before, .playfield__scissors::before, .playfield__rock::before {
   content: "";
-  position: absolute;
   top: .3rem;
   left: 0;
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
+  position: absolute;
   z-index: -10;
 }
 
@@ -216,13 +216,13 @@ body {
 
 .playfield__paper--bg::before, .playfield__scissors--bg::before, .playfield__rock--bg::before {
   content: "";
-  position: absolute;
   top: .3rem;
   left: 0;
   width: 7rem;
   height: 7rem;
   background: white no-repeat fixed;
   border-radius: 100%;
+  position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
@@ -332,7 +332,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 1;
 }
 
 .result__player--picked, .result__cpu--picked {

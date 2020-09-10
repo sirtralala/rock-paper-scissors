@@ -61,12 +61,12 @@
 
         &::before {
             content: "";
-            position: absolute;
             top: .3rem;
             left: 0;
             width: 10rem;
             height: 10rem;
             border-radius: 100%;
+            position: absolute;
             z-index: -10;
 
             @media only screen and (max-width: 600px) {
@@ -102,13 +102,13 @@
 
             &::before {
                 content: "";
-                position: absolute;
                 top: .3rem;
                 left: 0;
                 width: 7rem;
                 height: 7rem;
                 background: white no-repeat fixed;
                 border-radius: 100%;
+                position: absolute;
 
                 @media only screen and (max-width: 600px) {
                     width: 6rem;
