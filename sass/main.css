@@ -43,6 +43,8 @@ body {
   padding: 1rem;
   border: 0.2rem solid #606e85;
   border-radius: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 600px) {
@@ -329,6 +331,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .result__player--picked, .result__cpu--picked {
@@ -470,8 +474,6 @@ body {
   width: 30rem;
   background-color: rgba(96, 110, 133, 0.1);
   border-radius: 50%;
-  -webkit-transform: translateZ(-1rem);
-          transform: translateZ(-1rem);
 }
 
 .winner::before {
@@ -571,6 +573,8 @@ body {
   border-radius: .5rem;
   -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
+  position: relative;
+  z-index: 1;
 }
 
 .rules:hover {
@@ -643,6 +647,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(7, 8, 20, 0.6);
+  z-index: 10;
 }
 
 .modal__header {
@@ -667,7 +672,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .modal__header--text {
-    margin: 0 auto 2rem auto;
+    margin: 2rem auto;
   }
 }
 

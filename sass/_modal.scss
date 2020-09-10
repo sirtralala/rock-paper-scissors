@@ -8,6 +8,8 @@
     border: .1rem solid white;
     border-radius: .5rem;
     transition: all .1s ease-out;
+    position: relative;
+    z-index: 1;
 
     &:hover {
         cursor: pointer;
@@ -69,6 +71,7 @@
         width: 100vw;
         height: 100vh;
         background: rgba(7, 8, 20, 0.6);
+        z-index: 10;
     }
 
     &__header {
@@ -84,7 +87,7 @@
             text-transform: uppercase;
 
             @media only screen and (max-width: 500px) {
-                margin: 0 auto 2rem auto;
+                margin: 2rem auto;
             }
         }
 

@@ -30,7 +30,8 @@ getRandomItem = () => {
     let randomNumber = Math.floor((Math.random() * 3));
     return [`<div class="playfield__${items[randomNumber]}">
                 <div class="playfield__${items[randomNumber]}--bg">
-                    <img src="./images/icon-${items[randomNumber]}.svg" alt="${items[randomNumber]}" class="playfield__${items[randomNumber]}--icon">
+                    <img src="./images/icon-${items[randomNumber]}.svg" alt="${items[randomNumber]}"
+                    class="playfield__${items[randomNumber]}--icon">
                 </div>
             </div>`, randomNumber];
 }
@@ -129,8 +130,8 @@ playAgain = () => {
 
 
 toggleGame = () => {
-    console.log('Geh aus du Sau!');
     let game = document.querySelector('.result__game');
+
     if (game.style.display == 'flex') {
         game.style.display = 'none';
     }

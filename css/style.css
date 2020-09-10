@@ -29,7 +29,9 @@ body {
   margin: 2rem auto;
   padding: 1rem;
   border: 0.2rem solid #606e85;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  position: relative;
+  z-index: 10; }
   @media only screen and (max-width: 600px) {
     .header {
       width: 90%; } }
@@ -193,7 +195,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    z-index: 1; }
     .result__player--picked, .result__cpu--picked {
       text-align: center;
       text-transform: uppercase; }
@@ -275,8 +279,7 @@ body {
   height: 30rem;
   width: 30rem;
   background-color: rgba(96, 110, 133, 0.1);
-  border-radius: 50%;
-  transform: translateZ(-1rem); }
+  border-radius: 50%; }
   .winner::before {
     content: "";
     position: absolute;
@@ -333,7 +336,9 @@ body {
   margin: 0 2rem 1rem auto;
   border: .1rem solid white;
   border-radius: .5rem;
-  transition: all .1s ease-out; }
+  transition: all .1s ease-out;
+  position: relative;
+  z-index: 1; }
   .rules:hover {
     cursor: pointer;
     transform: scale(1.05); }
@@ -381,7 +386,8 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(7, 8, 20, 0.6); }
+    background: rgba(7, 8, 20, 0.6);
+    z-index: 10; }
   .modal__header {
     display: flex;
     justify-content: space-between;
@@ -394,7 +400,7 @@ body {
       text-transform: uppercase; }
       @media only screen and (max-width: 500px) {
         .modal__header--text {
-          margin: 0 auto 2rem auto; } }
+          margin: 2rem auto; } }
     .modal__header--close {
       width: fit-content; }
       .modal__header--close:hover {

@@ -21,6 +21,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
 
         &--picked {
             text-align: center;
@@ -134,7 +136,7 @@
     width: 30rem;
     background-color: hsla(217, 16%, 45%, .1);
     border-radius: 50%;
-    transform: translateZ(-1rem);
+    // transform: translateZ(-1rem);
 
     &::before {
         content: "";
