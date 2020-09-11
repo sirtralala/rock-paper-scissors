@@ -370,6 +370,14 @@ body {
     .modal {
       left: 15%;
       right: 15%; } }
+  @media only screen and (orientation: landscape) {
+    .modal {
+      top: 1rem;
+      left: 15%;
+      right: 15%;
+      height: 90vh;
+      padding: 1rem;
+      border-radius: .5rem; } }
   @media only screen and (max-width: 500px) {
     .modal {
       top: 0;
@@ -392,6 +400,9 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem; }
+    @media only screen and (orientation: landscape) {
+      .modal__header {
+        margin-bottom: 1rem; } }
     .modal__header--text {
       font-size: 180%;
       font-weight: 700;
@@ -399,7 +410,7 @@ body {
       text-transform: uppercase; }
       @media only screen and (max-width: 500px) {
         .modal__header--text {
-          margin: 2rem auto; } }
+          margin: 5vh auto; } }
     .modal__header--close {
       width: fit-content; }
       .modal__header--close:hover {
@@ -407,8 +418,13 @@ body {
       @media only screen and (max-width: 500px) {
         .modal__header--close {
           position: absolute;
-          top: 30rem;
+          bottom: 20%;
           left: 48%; } }
   .modal__image {
     display: flex;
     justify-content: center; }
+    .modal__image--img {
+      max-width: 70%; }
+      @media only screen and (orientation: landscape) {
+        .modal__image--img {
+          max-height: 66vh; } }

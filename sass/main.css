@@ -627,6 +627,17 @@ body {
   }
 }
 
+@media only screen and (orientation: landscape) {
+  .modal {
+    top: 1rem;
+    left: 15%;
+    right: 15%;
+    height: 90vh;
+    padding: 1rem;
+    border-radius: .5rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .modal {
     top: 0;
@@ -662,6 +673,12 @@ body {
   margin-bottom: 3rem;
 }
 
+@media only screen and (orientation: landscape) {
+  .modal__header {
+    margin-bottom: 1rem;
+  }
+}
+
 .modal__header--text {
   font-size: 180%;
   font-weight: 700;
@@ -671,7 +688,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .modal__header--text {
-    margin: 2rem auto;
+    margin: 5vh auto;
   }
 }
 
@@ -688,7 +705,7 @@ body {
 @media only screen and (max-width: 500px) {
   .modal__header--close {
     position: absolute;
-    top: 30rem;
+    bottom: 20%;
     left: 48%;
   }
 }
@@ -700,5 +717,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal__image--img {
+  max-width: 70%;
+}
+
+@media only screen and (orientation: landscape) {
+  .modal__image--img {
+    max-height: 66vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
